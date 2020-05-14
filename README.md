@@ -1,2 +1,3 @@
 # WebDewelop
-For labs from WebDewelopment
+Check my website: 
+https://kachmaryk.github.io/WebDevelop/
