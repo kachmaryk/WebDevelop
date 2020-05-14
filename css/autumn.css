@@ -11,38 +11,33 @@
 
 .row-back{
     padding-top: 30pt;
-    color: lightyellow;
+    color: rgb(255, 255, 255);
     font-size: 45px;
     font-family: 'Trocchi'; 
     font-weight: bold;
-    text-align: left;
+    text-align: center;
 }
 
 .row-back2{
     padding-top: 0pt;
-    color: lightyellow; 
+    color: rgb(255, 255, 255); 
     font-size: 20px;
     font-family: 'Trocchi'; 
     font-weight: bold;
-    text-align: left;
+    text-align: center;
 }
 
 .myheader{
     height: 500px;
     width: 100%;
-    background: url(img/header2.jpg) center no-repeat;
+    background: url(img/summer3.jpg) center no-repeat;
     background-size: cover;
 }
+
 .header-content {
-    padding: 250px 0px 0px 0px;
+    padding: 300px 0px 0px 0px;
 }
+
 .header-content2 {
     padding: 0px 0px 0px 0px;
 }
-
-.carousel-inner .item{ 
-    height:500px;
-     
-    background-size:cover;
-    background-position: center center;
- }

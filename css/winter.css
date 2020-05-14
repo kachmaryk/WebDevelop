@@ -9,40 +9,30 @@
     padding: 150px 0px 50px 0px;
 }
 
+.header-content {
+    margin: auto;
+    padding: 250px 0px 50px 0px;
+}
+
 .row-back{
     padding-top: 30pt;
-    color: lightyellow;
+    color: lightyellow; 
     font-size: 45px;
     font-family: 'Trocchi'; 
     font-weight: bold;
-    text-align: left;
 }
 
 .row-back2{
     padding-top: 0pt;
     color: lightyellow; 
-    font-size: 20px;
+    font-size: 30px;
     font-family: 'Trocchi'; 
     font-weight: bold;
-    text-align: left;
 }
 
 .myheader{
     height: 500px;
     width: 100%;
-    background: url(img/header2.jpg) center no-repeat;
+    background: url("img/winter3.jpg") center no-repeat;
     background-size: cover;
 }
-.header-content {
-    padding: 250px 0px 0px 0px;
-}
-.header-content2 {
-    padding: 0px 0px 0px 0px;
-}
-
-.carousel-inner .item{ 
-    height:500px;
-     
-    background-size:cover;
-    background-position: center center;
- }
