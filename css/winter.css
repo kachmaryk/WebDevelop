@@ -4,14 +4,80 @@
     height: 200px;
 }
 
+.row-content0 {
+    margin: 0px auto;
+    padding: 50px 0px 0px 0px;
+    border-bottom: 1px ridge;
+    min-height: 150px;
+    font-size: 20px;
+    font-family: 'Comic Sans MS';
+    align-self: center;
+}
+
 .row-content {
     margin: 0px auto;
     padding: 150px 0px 50px 0px;
 }
 
-.header-content {
-    margin: auto;
-    padding: 250px 0px 50px 0px;
+
+.row-content2 {
+    margin: 0px auto;
+    padding: 15px 0px 20px 0px;
+    font-size: 20px;
+    font-family: 'Comic Sans MS';
+    align-self: center;
+}
+
+.row-content3 {
+    margin: 0px auto;
+    padding: 40px 0px 5px 0px;
+    font-size: 30px;
+    font-family: 'Charcoal';
+    font-weight: bold;
+    align-self: center;
+}
+
+.row-content4 {
+    margin: 0px auto;
+    padding: 5px 0px 0px 0px;
+    font-size: 20px;
+    font-family: 'Comic Sans MS';
+    align-self: center;
+}
+
+.row-content5 {
+    margin: 0px auto;
+    padding: 0px 0px 10px 0px;
+    font-size: 20px;
+    font-family: 'Comic Sans MS';
+    font-weight: bold;
+    align-self: center;
+}
+
+.row-content6 {
+    margin: 0px auto;
+    padding: 20px 0px 10px 0px;
+    font-size: 30px;
+    font-family: 'Charcoal';
+    font-weight: bold;
+    align-self: center;
+}
+
+.row-content7 {
+    margin: 0px auto;
+    padding: 10px 0px 5px 0px;
+    font-size: 20px;
+    font-family: 'Comic Sans MS';
+    align-self: center;
+}
+
+.row-content8 {
+    margin: 0px auto;
+    padding: 15px 0px 10px 0px;
+    font-size: 20px;
+    font-family: 'Comic Sans MS';
+    font-weight: bold;
+    align-self: center;
 }
 
 .row-back{
@@ -25,9 +91,14 @@
 .row-back2{
     padding-top: 0pt;
     color: lightyellow; 
-    font-size: 30px;
+    font-size: 25px;
     font-family: 'Trocchi'; 
     font-weight: bold;
+}
+
+.header-content {
+    margin: auto;
+    padding: 250px 0px 50px 0px;
 }
 
 .myheader{
@@ -35,4 +106,39 @@
     width: 100%;
     background: url("img/winter3.jpg") center no-repeat;
     background-size: cover;
+}
+
+@media only screen and (max-width: 400px)  {
+    .carousel-inner{
+        width:100%;
+        height: 90pt !important;
+        object-fit: contain;
+      }
+}
+
+@media only screen and (max-width: 600px)  {
+    .carousel-inner{
+        width:100%;
+        height: 150pt !important;
+        object-fit: contain;
+      }
+}
+
+@media only screen and (min-width: 600px)  {
+    .carousel-inner{
+        width:100%;
+        height: 180pt !important;
+        object-fit: contain;
+      }
+}
+
+@media only screen and (min-width: 900px)  {
+    .carousel-inner{
+        width:100%;
+        height: 370pt !important;
+        object-fit: contain;
+      }
+}
+.myPadding {
+    padding: 10px 0px 0px 0px;;
 }

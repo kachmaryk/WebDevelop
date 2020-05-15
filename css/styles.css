@@ -4,9 +4,86 @@
     height: 200px;
 }
 
+.row-content0 {
+    margin: 0px auto;
+    padding: 50px 0px 0px 0px;
+    border-bottom: 1px ridge;
+    min-height: 150px;
+    font-size: 20px;
+    font-family: 'Comic Sans MS';
+    align-self: center;
+}
+
 .row-content {
     margin: 0px auto;
     padding: 150px 0px 50px 0px;
+}
+
+
+.row-content2 {
+    margin: 0px auto;
+    padding: 15px 0px 20px 0px;
+    font-size: 20px;
+    font-family: 'Comic Sans MS';
+    align-self: center;
+}
+
+.row-content3 {
+    margin: 0px auto;
+    padding: 40px 0px 5px 0px;
+    font-size: 30px;
+    font-family: 'Charcoal';
+    font-weight: bold;
+    align-self: center;
+}
+
+.row-content4 {
+    margin: 0px auto;
+    padding: 5px 0px 0px 0px;
+    font-size: 20px;
+    font-family: 'Comic Sans MS';
+    align-self: center;
+}
+
+.row-content5 {
+    margin: 0px auto;
+    padding: 0px 0px 10px 0px;
+    font-size: 20px;
+    font-family: 'Comic Sans MS';
+    font-weight: bold;
+    align-self: center;
+}
+
+.row-content6 {
+    margin: 0px auto;
+    padding: 20px 0px 10px 0px;
+    font-size: 30px;
+    font-family: 'Charcoal';
+    font-weight: bold;
+    align-self: center;
+}
+
+.row-content7 {
+    margin: 0px auto;
+    padding: 10px 0px 5px 0px;
+    font-size: 20px;
+    font-family: 'Comic Sans MS';
+    align-self: center;
+}
+
+.row-content8 {
+    margin: 0px auto;
+    padding: 15px 0px 10px 0px;
+    font-size: 20px;
+    font-family: 'Comic Sans MS';
+    font-weight: bold;
+    align-self: center;
+}
+
+.row-content9 {
+    font-size: 20px;
+    font-family: 'Comic Sans MS';
+    align-self: center;
 }
 
 .row-back{
@@ -30,7 +107,7 @@
 .myheader{
     height: 500px;
     width: 100%;
-    background: url(img/header2.jpg) center no-repeat;
+    background: url(img/header3.jpg) center no-repeat;
     background-size: cover;
 }
 .header-content {
@@ -46,3 +123,69 @@
     background-size:cover;
     background-position: center center;
  }
+
+ @media only screen and (max-width: 400px)  {
+    .my-inner{
+        width:100%;
+        height: 90pt !important;
+        object-fit: contain;
+      }
+}
+
+@media only screen and (max-width: 600px)  {
+    .my-inner{
+        width:100%;
+        height: 200pt !important;
+        object-fit: contain;
+      }
+}
+
+@media only screen and (min-width: 600px)  {
+    .my-inner{
+        width:100%;
+        height: 260pt !important;
+        object-fit: contain;
+      }
+}
+
+@media only screen and (min-width: 900px)  {
+    .my-inner{
+        width:100%;
+        height: 255pt !important;
+        object-fit: contain;
+        padding: 0px 0px 50px 0px;
+      }
+}
+
+@media only screen and (max-width: 600px)  {
+    .my-inner1{
+        width:100%;
+        height: 160pt !important;
+        object-fit: contain;
+      }
+}
+@media only screen and (min-width: 900px)  {
+    .my-inner1{
+        width:100%;
+        height: 240pt !important;
+        object-fit: contain;
+        padding: 0px 0px 50px 0px;
+      }
+}
+
+.myPadding {
+    padding: 25px 0px 15px 0px;;
+}
+
+.myPadding2 {
+    padding: px 0px 20px 0px;;
+}
+
+.my-border{
+    border-bottom: 1px ridge;
+  }
+
+a:link {
+    text-decoration: none;
+    color: black;
+  }
