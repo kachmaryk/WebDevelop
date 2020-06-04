@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ab1da0cb-0db0-4e5e-9ad8-dc154bfa265a" name="Default Changelist" comment="" />
+    <list default="true" id="ab1da0cb-0db0-4e5e-9ad8-dc154bfa265a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,7 +58,18 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\Asus\PycharmProjects\WebDevelop\.idea" />
+      </set>
+    </option>
+  </component>
   <component name="ProjectId" id="1cgklUhfGYJw7rFchDs3VGB5gAW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -123,7 +136,7 @@
       <workItem from="1591007794474" duration="765000" />
       <workItem from="1591014763263" duration="9235000" />
       <workItem from="1591042120814" duration="3201000" />
-      <workItem from="1591178031152" duration="3637000" />
+      <workItem from="1591178031152" duration="4150000" />
     </task>
     <servers />
   </component>
