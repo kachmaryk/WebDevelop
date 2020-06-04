@@ -3,6 +3,7 @@ from django.views.generic import View
 from .forms import ContactForm
 from django.shortcuts import redirect
 from .models import ContactInfo
+from django.http import JsonResponse
 
 def home_view(request):
     return render(request, 'index.html', {})
@@ -42,12 +43,16 @@ class ContactView(View):
 
         if form.is_valid():
             new_contact = form.save()
-            return redirect('/')
+            return render(request, 'contact.html', context={'form': form})
 
+class ContactListView(View):
+    def get(self, request):
+        form = ContactForm()
+        contacts = ContactInfo.objects.all()
+        return render(request, 'contact_list.html', context={'contacts': contacts})
 
-def contact_view(response):
-    form = ContactForm()
-    contacts = ContactInfo.objects.all()
-    return render(response, 'contact_list.html', context={'contacts': contacts})
-
-
+class ContactDelete(View):
+    def post(self, request, id):
+        contact = ContactInfo.objects.get(id = id)
+        contact.delete()
+        return JsonResponse({'result': 'ok'}, status = 200)

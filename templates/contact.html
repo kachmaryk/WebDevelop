@@ -5,10 +5,10 @@
 {% endblock %}
 {% block mainpage %}
     <div class="container justify-content-center">
-        <form class="form-daun justify-content-center" method="post">
+        <form class="form-daun justify-content-center" method="post" id = "contact_form">
             {% csrf_token %}
             {{ form.as_p }}
-        <input class="styled" type="submit" value="Send"/>
+        <input class="styled" type="submit" value="Send" id = "create_button"/>
         </form>
     </div>
 {% endblock %}

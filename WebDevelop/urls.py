@@ -1,5 +1,5 @@
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from Japan.views import *
 
 urlpatterns = [
@@ -12,5 +12,5 @@ urlpatterns = [
     path('signIn/', signIn_view, name='signIn_view'),
     path('signUp/', signUp_view, name='signUp_view'),
     path('contact/', ContactView.as_view(), name='contact'),
-    path('contact_list/', contact_view, name='contact_list'),
+    path('contact_list/', include("Japan.urls"), name = "contact_list")
 ]

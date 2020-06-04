@@ -4,17 +4,19 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/daun.css' %}">
 {% endblock %}
 {% block mainpage %}
-    <div class="col-5 mt-5 container div-daun">
+    <div class="col-5 mt-5 container div-daun" id = "contactDiv">
         {% csrf_token %}
         {% for contact in contacts %}
-            <div class="card mb-1 div-daun-jr">
+            <div class="card mb-1 div-daun-jr" data-id="{{ contact.id }}"   >
                 <div class="card-body">
+                    <button type="button" class="close float-right" data-id="{{ contact.id }}">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                     <h1>{{ contact.title }}</h1>
                     <p>{{ contact.name }} </p>
                     <p>{{ contact.description }} </p>
                 </div>
             </div>
         {% endfor %}
-
     </div>
 {% endblock %}
