@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab1da0cb-0db0-4e5e-9ad8-dc154bfa265a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Japan/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/contact.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/WebDevelop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/WebDevelop.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Japan/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Japan/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebDevelop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/WebDevelop/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/contact_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/contact_list.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,9 +61,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -83,6 +93,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -105,7 +116,7 @@
         <env name="PYTHONUNBUFFERED" value="1" />
         <env name="DJANGO_SETTINGS_MODULE" value="WebDevelop.settings" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="C:\Users\user\.virtualenvs\WebDevelop\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -122,6 +133,28 @@
       <method v="2" />
     </configuration>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:db.sqlite3" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:db.sqlite3" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@719ebe" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -137,6 +170,7 @@
       <workItem from="1591014763263" duration="9235000" />
       <workItem from="1591042120814" duration="3201000" />
       <workItem from="1591178031152" duration="4150000" />
+      <workItem from="1591255730280" duration="4382000" />
     </task>
     <servers />
   </component>
@@ -144,6 +178,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="503" y="49" key="#WebDevelop" timestamp="1591255771250">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="503" y="49" key="#WebDevelop/0.0.1536.824@0.0.1536.824" timestamp="1591255771250" />
     <state x="361" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591017032365">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -152,26 +190,30 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1591044741972" />
-    <state width="1493" height="161" key="GridCell.Tab.0.bottom" timestamp="1591254814168">
+    <state width="1493" height="119" key="GridCell.Tab.0.bottom" timestamp="1591259741161">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="161" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1591254814168" />
-    <state width="1493" height="161" key="GridCell.Tab.0.center" timestamp="1591254814168">
+    <state width="1493" height="119" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1591259741161" />
+    <state width="1493" height="119" key="GridCell.Tab.0.center" timestamp="1591259741161">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="161" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1591254814168" />
-    <state width="1493" height="161" key="GridCell.Tab.0.left" timestamp="1591254814168">
+    <state width="1493" height="119" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1591259741161" />
+    <state width="1493" height="119" key="GridCell.Tab.0.left" timestamp="1591259741161">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="161" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1591254814168" />
-    <state width="1493" height="161" key="GridCell.Tab.0.right" timestamp="1591254814168">
+    <state width="1493" height="119" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1591259741161" />
+    <state width="1493" height="119" key="GridCell.Tab.0.right" timestamp="1591259741161">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="161" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1591254814168" />
+    <state width="1493" height="119" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1591259741161" />
     <state width="189" height="457" key="HiddenNamespacesPopup" timestamp="1591016996335">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="189" height="457" key="HiddenNamespacesPopup/0.0.1536.824@0.0.1536.824" timestamp="1591016996335" />
+    <state x="279" y="57" key="SettingsEditor" timestamp="1591258003375">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="279" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1591258003375" />
     <state x="624" y="302" key="com.intellij.database.actions.ToolActions$ScriptingActionBase$MyDatabaseScriptDialog" timestamp="1591213935530">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
