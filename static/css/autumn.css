@@ -1,0 +1,229 @@
+.row-header {
+    margin: 0px auto;
+    padding: auto;
+    height: 200px;
+}
+
+.row-content0 {
+    margin: 0px auto;
+    padding: 50px 0px 0px 0px;
+    border-bottom: 1px ridge;
+    min-height: 150px;
+    font-size: 20px;
+    font-family: 'Comic Sans MS';
+    align-self: center;
+}
+
+.row-content {
+    margin: 0px auto;
+    padding: 150px 0px 50px 0px;
+}
+
+
+.row-content2 {
+    margin: 0px auto;
+    padding: 15px 0px 20px 0px;
+    font-size: 20px;
+    font-family: 'Comic Sans MS';
+    align-self: center;
+}
+
+.row-content3 {
+    margin: 0px auto;
+    padding: 40px 0px 5px 0px;
+    font-size: 30px;
+    font-family: 'Charcoal';
+    font-weight: bold;
+    align-self: center;
+}
+
+.row-content4 {
+    margin: 0px auto;
+    padding: 5px 0px 0px 0px;
+    font-size: 20px;
+    font-family: 'Comic Sans MS';
+    align-self: center;
+}
+
+.row-content5 {
+    margin: 0px auto;
+    padding: 0px 0px 10px 0px;
+    font-size: 20px;
+    font-family: 'Comic Sans MS';
+    font-weight: bold;
+    align-self: center;
+}
+
+.row-content6 {
+    margin: 0px auto;
+    padding: 20px 0px 10px 0px;
+    font-size: 30px;
+    font-family: 'Charcoal';
+    font-weight: bold;
+    align-self: center;
+}
+
+.row-content7 {
+    margin: 0px auto;
+    padding: 10px 0px 5px 0px;
+    font-size: 20px;
+    font-family: 'Comic Sans MS';
+    align-self: center;
+}
+
+.row-content8 {
+    margin: 0px auto;
+    padding: 15px 0px 10px 0px;
+    font-size: 20px;
+    font-family: 'Comic Sans MS';
+    font-weight: bold;
+    align-self: center;
+}
+
+.row-back{
+    padding-top: 30pt;
+    color: lightyellow;
+    font-size: 45px;
+    font-family: 'Trocchi'; 
+    font-weight: bold;
+    text-align: center;
+}
+
+.row-back2{
+    padding-top: 0pt;
+    color: lightyellow; 
+    font-size: 20px;
+    font-family: 'Trocchi'; 
+    font-weight: bold;
+    text-align: center;
+}
+
+.myheader{
+    height: 500px;
+    width: 100%;
+    background: url(img/autumn2.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.header-content {
+    padding: 300px 0px 0px 0px;
+}
+
+.header-content2 {
+    padding: 0px 0px 0px 0px;
+}
+
+@media only screen and (max-width: 400px)  {
+    .carousel-inner{
+        width:100%;
+        height: 90pt !important;
+        object-fit: contain;
+      }
+}
+
+@media only screen and (max-width: 600px)  {
+    .carousel-inner{
+        width:100%;
+        height: 138pt !important;
+        object-fit: contain;
+      }
+}
+
+@media only screen and (min-width: 600px)  {
+    .carousel-inner{
+        width:100%;
+        height: 180pt !important;
+        object-fit: contain;
+      }
+}
+
+@media only screen and (min-width: 900px)  {
+    .carousel-inner{
+        width:100%;
+        height: 380pt !important;
+        object-fit: contain;
+      }
+}
+
+.myPadding {
+    padding: 10px 0px 0px 0px;;
+}
+
+.newPadding {
+    padding: 0px 0px 40px 0px;;
+}
+
+a:hover {
+    color: rgb(255, 58, 32);
+}
+
+.footer {
+    margin: px auto;
+    padding: 30px 0px 20px 0px;
+    color: lightyellow;
+}
+
+.bottomnavbar {
+    overflow: hidden;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .bottomnavbar a {
+    float: left;
+    display: block;
+    color: lightyellow;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    justify-self: center;
+  }
+  
+  /* Change the color of links on hover */
+  .bottomnavbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .bottomnavbar a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+@media screen and (max-width: 600px) {
+    .bottomnavbar a {
+        float: center;
+        display: block;
+        color: lightyellow;
+        text-align: center;
+        justify-self: center;
+        align-content: center;
+        align-self: center;
+        align-items: center;
+        text-decoration: none;
+        font-size: 17px;
+        width: 160px;
+        height: 35px;
+        justify-content: center;
+        padding: 0px 0px 0px 45px; 
+      }
+}
+
+.newPadding2 {
+    padding: 20px 0px 0px 0px;
+}
+
+.newPadding3 {
+    padding: 50px 0px 0px 0px;
+    border-top: 1px ridge;
+}
+
+.footer .social-media a{
+    color: lightyellow;
+    font-size: 30px;
+    padding:  10px 0px 20px 0px;
+    margin: 0 10px;
+}

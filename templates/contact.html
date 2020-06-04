@@ -1,0 +1,14 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block cssForThis %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/daun.css' %}">
+{% endblock %}
+{% block mainpage %}
+    <div class="container justify-content-center">
+        <form class="form-daun justify-content-center" method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+        <input class="styled" type="submit" value="Send"/>
+        </form>
+    </div>
+{% endblock %}

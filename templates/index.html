@@ -1,0 +1,167 @@
+{% load static %}
+<html lang="en">
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    {% block cssForThis %}
+    <link rel = "stylesheet" href="../static/css/styles.css">
+    {% endblock %}
+    <script src="https://kit.fontawesome.com/ed76be474d.js" crossorigin="anonymous"></script>
+    <title>MyWebsite</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-sm sticky-top">
+        <a class="navbar-brand" href="{% url 'home_view' %}">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Japanese Seasons
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="{% url 'winter_view' %}">Winter Japan</a>
+                <a class="dropdown-item" href="{% url 'spring_view' %}">Spring Japan</a>
+                <a class="dropdown-item" href="{% url 'summer_view' %}">Summer Japan</a>
+                <a class="dropdown-item" href="{% url 'autumn_view' %}">Autumn Japan</a>
+              </div>
+            </li>
+              <li  class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Also
+              </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="{% url 'contact' %}">Contact Us</a>
+                <a class="dropdown-item" href="{% url 'contact_list' %}">Contact List</a>
+              </div>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'signIn_view' %}">Authorization</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">MyProfile</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+{% block mainpage %}
+    <header class="myheader">
+        <div class="container">
+            <div class="row row-header col-sm-9">
+                <div class="col-lg-7 col-md-7 col-sm-10 header-content">
+                    <h1 class = "row-back">Expiriences in Japan</h1>
+                </div>
+                <div class="col-lg-7 col-md-7 col-sm-7 header-content2">
+                    <h1 class = "row-back2">Unforgettable experiences and breathtaking moments</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class = "container col-lg-8 col-md-8 col-sm-12">
+        <div class = "row align-items-center col-lg-10 col-md-10 col-sm-12">
+            <div>
+                <h4 class = "row-content0 myPadding2">
+                    Hi! In this article I will tell some intesting things and places in Japan, so that 
+                    when you withit it(no matter in which season), you`ll know what to do and where to go.
+                    So just relax and enjoy.
+                </h4>
+            </div>
+        </div>
+    </div>
+
+    <div class = "container col-lg-8 col-md-8 col-sm-12">
+        <div class = "row align-items-center col-lg-10 col-md-10 col-sm-12">
+            <div class = " myPadding3">
+                <h2 class = "row-content12">
+                    Japan is awesome and you have to see it yourself!
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class = "container col-lg-9 col-md-9 col-sm-12">
+        <div class = "row align-items-center col-lg-10 col-md-10 col-sm-12">
+            <div>
+                <h4 class = "row-content11">
+                    There could be hundreds of reasons why you should add Japan in your travel list. 
+                    Being one of the most advanced (in terms of technology) countries in the world, 
+                    Japan also offers an ancient outlook to tourists, especially their religious sites.
+                </h4>
+            </div>
+        </div>
+    </div>
+
+    <div class = "container myPadding">
+        <div class = "row">
+            <a href="./winterJapan.html" class="column">
+                <div class = "col-sm-10 col-sm-offset-1">
+                    <img src="../static/img/WinterIndex.png" alt="Winter" style="width:100%">
+                    <p class = "row-content10">Are you planning to visit Japan in WINTER?? During winter in Japan...</p>
+                </div>
+            </a>
+            <a href="./springJapan.html" class="column">
+                <div class = "col-sm-10 col-sm-offset-1">
+                    <img src="../static/img/SpringIndex.png" alt="Spring" style="width:100%">
+                    <p class = "row-content10">Why SPRING is considered as the best season in Japan??? Only because...</p>
+                </div>
+            </a>
+        </div>
+        <div class = "row">
+            <a href="./summerJapan.html" class="column">
+                <div class = "col-sm-10 col-sm-offset-1">
+                    <img src="../static/img/SummerIndex.png" alt="Summer" style="width:100%">
+                    <p class = "row-content10">The most exciting time of the year. Don’t hate Japanese SUMMER because...</p>
+                </div>
+            </a>
+            <a href="./autumnJapan.html" class="column">
+                <div class = "col-sm-10 col-sm-offset-1">
+                    <img src="../static/img/AutumnIndex.png" alt="Autumn" style="width:100%">
+                    <p class = "row-content10">AUTUMN in Japan is from September to November, and it’s one of the best...</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    
+    <footer class="footer bg-dark">
+        <div class="container">
+            <div class = "bottomnavbar">
+                <a href="{% url 'home_view' %}" class = "active">Home</a>
+                <a href="{% url 'winter_view' %}">Winter Japan</a>
+                <a href="{% url 'spring_view' %}">Spring Japan</a>
+                <a href="{% url 'summer_view' %}">Summer Japan</a>
+                <a href="{% url 'autumn_view' %}">Autumn Japan</a>
+                <a href="{% url 'signIn_view' %}">Authorization</a>
+            </div>
+
+            <div class="row justify-content-center newPadding2">             
+                <div class="text-center social-media">
+                    <a class = "btn btn-social-icon btn-facebook" href="https://www.facebook.com/viktor.kachmaryk.3"><i class="fab fa-facebook"></i></a>
+                    <a class = "btn btn-social-icon btn-instagram" href="https://www.instagram.com/k__vitya__k/?hl=uk"><i class="fab fa-instagram"></i></a>
+                    <a class = "btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fab fa-twitter-square"></i></a>
+                    <a class = "btn btn-social-icon btn-gooogle" href="http://youtube.com/"><i class="fab fa-youtube"></i></a>
+                </div>
+           </div>
+            <div class="row justify-content-center newPadding3">             
+                <div class="col-auto">
+                    <p>Copyright © Kachmaryk Viktor. All Rights Reserved.</p>
+                </div>
+           </div>
+        </div>
+    </footer>
+{% endblock %}
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

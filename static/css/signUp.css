@@ -1,0 +1,25 @@
+.row-header {
+    margin: 0px auto;
+    padding: auto;
+    height: 200px;
+}
+
+.row-content {
+    margin: 0px auto;
+    padding: 100px 0px 0px 0px;
+    align-self: center;
+    text-align: center;
+
+}
+
+.row{
+    align-self: center;
+    text-align: center;
+}
+
+.myheader{
+    height: 92.5%;
+    width: 100%;
+    background: url(img/header3.jpg) center no-repeat;
+    background-size: cover;
+} 
