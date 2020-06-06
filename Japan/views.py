@@ -48,7 +48,7 @@ def sign_in_view(request):
                 login(request, user)
                 return redirect('home_view')
             else:
-                messages.info(request, 'Username of Password is incorrect')
+                messages.info(request, 'Username or Password is incorrect')
         context = {}
         return render(request, 'signIn.html', context)
 
@@ -65,10 +65,10 @@ def sign_up_view(request):
             if form.is_valid():
                 form.save()
                 user = form.cleaned_data.get('username')
-                messages.success(request, 'User ' + user + ' was successfully')
+                messages.success(request, 'User ' + user + ' was successfully created')
                 return redirect('signIn_view')
             else:
-                return redirect('contact')
+                return redirect('signUp_view')
 
         return render(request, 'signUp.html', context)
 

@@ -1,18 +1,24 @@
 {% extends 'index.html' %}
 
 {% block cssForThis %}
+    <link rel = "stylesheet" href="../static/css/signUp.css">
 {% endblock %}
 {% block profile %}
 {% endblock %}
 {% block logout %}
 {% endblock %}
 {% block mainpage %}
-<div class="container">
-                     <h2>Sign Up</h2>
+<div class="my_container">
+    <div style = "padding-top: 50px"><h2>Sign Up</h2></div>
                     <form method="post">
-                        {% csrf_token %}
-                        {{ form.as_p }}
-			    <input type="submit" value="Create My Account">
+                        <div class = "table">
+                            {% csrf_token %}
+                            <div class = "table_content"><p>Username</p>{{ form.username }}</div>
+                            <div class = "table_content"><p>Email</p>{{ form.email }}</div>
+                            <div class = "table_content"><p>Password</p>{{ form.password1 }}</div>
+                            <div class = "table_content"><p>Confirm password</p>{{ form.password2 }}</div>
+			                <div class = "table_content"><input type="submit" value="Create My Account"></div>
+                        </div>
                     </form>
 </div>
 {% endblock %}

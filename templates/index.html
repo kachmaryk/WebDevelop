@@ -43,17 +43,14 @@
                 <a class="dropdown-item" href="{% url 'contact_list' %}">Contact List</a>
               </div>
               </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{% url 'signIn_view' %}">Authorization</a>
-            </li>
               {% block profile %}
             <li class="nav-item">
-                <a class="nav-link" href="{% url 'profile' %}">MyProfile</a>
+                <a class="nav-link" href="{% url 'profile' %}">{{ request.user }}</a>
             </li>
               {% endblock %}
           </ul>
             {% block logout %}
-            <a class="nav-link" href="{% url 'logout' %}">Logout</a>
+            <a class="nav-link navbar-brand" href="{% url 'logout' %}">Logout</a>
             {% endblock %}
         </div>
       </nav>
@@ -108,13 +105,13 @@
 
     <div class = "container myPadding">
         <div class = "row">
-            <a href="./winterJapan.html" class="column">
+            <a href="{% url 'winter_view' %}" class="column">
                 <div class = "col-sm-10 col-sm-offset-1">
                     <img src="../static/img/WinterIndex.png" alt="Winter" style="width:100%">
                     <p class = "row-content10">Are you planning to visit Japan in WINTER?? During winter in Japan...</p>
                 </div>
             </a>
-            <a href="./springJapan.html" class="column">
+            <a href="{% url 'spring_view' %}" class="column">
                 <div class = "col-sm-10 col-sm-offset-1">
                     <img src="../static/img/SpringIndex.png" alt="Spring" style="width:100%">
                     <p class = "row-content10">Why SPRING is considered as the best season in Japan??? Only because...</p>
@@ -122,13 +119,13 @@
             </a>
         </div>
         <div class = "row">
-            <a href="./summerJapan.html" class="column">
+            <a href="{% url 'summer_view' %}" class="column">
                 <div class = "col-sm-10 col-sm-offset-1">
                     <img src="../static/img/SummerIndex.png" alt="Summer" style="width:100%">
                     <p class = "row-content10">The most exciting time of the year. Don’t hate Japanese SUMMER because...</p>
                 </div>
             </a>
-            <a href="./autumnJapan.html" class="column">
+            <a href="{% url 'autumn_view' %}" class="column">
                 <div class = "col-sm-10 col-sm-offset-1">
                     <img src="../static/img/AutumnIndex.png" alt="Autumn" style="width:100%">
                     <p class = "row-content10">AUTUMN in Japan is from September to November, and it’s one of the best...</p>

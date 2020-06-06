@@ -14,7 +14,7 @@
                 <div class="col-12 col-md-9 row-content">
                     <form method="post">
                         {% csrf_token %}
-                        <div class = "form-group row">
+                        <div class = "form-group">
                             <div class = "mx-auto col-lg-5 col-md-5 col-sm-8 mx-auto">
 							<input type="text" name="username" placeholder="Username...">
                             </div>
@@ -31,11 +31,12 @@
                                 </button>
                             </div>
                         </div>
-                        <div class = "row col-lg-8 col-md-8 col-sm-12 mx-auto">
+                        <div class = "row col-lg-4 col-md-4 col-sm-12 mx-auto confirmation" style = "align-self: center; font-size: 16px">
                             {% for message in messages %}
                                 <p>{{ message }}</p>
                             {% endfor %}
-
+                        </div>
+                        <div class = "row col-lg-8 col-md-8 col-sm-12 mx-auto">
                             <div class = "col-lg-3 col-md-3 col-sm-4 mx-auto">
                                 <a href="{% url 'signUp_view' %}" class="log-register bg-dark text-white">Sign Up</a>
                             </div>
