@@ -46,10 +46,15 @@
             <li class="nav-item">
                 <a class="nav-link" href="{% url 'signIn_view' %}">Authorization</a>
             </li>
+              {% block profile %}
             <li class="nav-item">
-                <a class="nav-link disabled" href="#">MyProfile</a>
+                <a class="nav-link" href="{% url 'profile' %}">MyProfile</a>
             </li>
+              {% endblock %}
           </ul>
+            {% block logout %}
+            <a class="nav-link" href="{% url 'logout' %}">Logout</a>
+            {% endblock %}
         </div>
       </nav>
 

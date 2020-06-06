@@ -1,0 +1,11 @@
+{% extends 'index.html' %}
+{% block mainpage %}
+    <div class="container">
+
+        <h1>Username: {{ user }}</h1>
+    <p>Your email: {{ user.email }}</p>
+    <p>First name: {{ user.first_name }}</p>
+    <p>Last name: {{ user.last_name }}</p>
+        <a href="{% url 'profile_edit' %}"><button type="button" class = 'btn w3-btn' style="background-color: #3f51b5; color: white">Edit</button></a>
+    </div>
+{% endblock %}

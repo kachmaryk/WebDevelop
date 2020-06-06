@@ -9,8 +9,11 @@ urlpatterns = [
     path('spring/', spring_view, name='spring_view'),
     path('summer/', summer_view, name='summer_view'),
     path('autumn/', autumn_view, name='autumn_view'),
-    path('signIn/', signIn_view, name='signIn_view'),
-    path('signUp/', signUp_view, name='signUp_view'),
+    path('signIn/', sign_in_view, name='signIn_view'),
+    path('signUp/', sign_up_view, name='signUp_view'),
     path('contact/', ContactView.as_view(), name='contact'),
-    path('contact_list/', include("Japan.urls"), name = "contact_list")
+    path('contact_list/', include("Japan.urls"), name="contact_list"),
+    path('profile/', profile_view, name='profile'),
+    path('profile/edit/', profile_edit_view, name='profile_edit'),
+    path('logout/', logout_view, name='logout')
 ]
