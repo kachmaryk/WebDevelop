@@ -9,6 +9,7 @@ urlpatterns = [
     path('spring/', spring_view, name='spring_view'),
     path('summer/', summer_view, name='summer_view'),
     path('autumn/', autumn_view, name='autumn_view'),
+    path('order/', Order.as_view(), name='order_view'),
     path('signIn/', sign_in_view, name='signIn_view'),
     path('signUp/', sign_up_view, name='signUp_view'),
     path('contact/', ContactView.as_view(), name='contact'),

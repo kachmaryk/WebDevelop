@@ -1,0 +1,76 @@
+{% extends 'index.html' %}
+
+{% block cssForThis %}
+    <link rel = "stylesheet" href="../static/css/order.css">
+{% endblock %}
+
+{% block mainpage %}
+    <div class="my_container">
+    <div class = "myHernya"><h2>CREATE YOUR TRIP</h2></div>
+        <form method="post">
+            <div class = "table">
+                {% csrf_token %}
+                <div class = "table_content">Number of Guests: </div>
+                <div class = "table_content">
+                    {{ form.guests }}
+                </div>
+
+                <div class = "table_content row_padding">Select live option: </div>
+                <div class = "table_content">
+                    {{ form.acomodation }}
+                </div>
+
+                <div class = "table_content row_padding">Set time to start the trip:  </div>
+                <div class = "table_content">
+{#                    <input type="date" class = "form-control" id = "startDate" name = "startDate" placeholder = "Date" value="{{form.start_date|date:"Y-m-d" }}">#}
+                    {{ form.start_date }}
+                </div>
+
+                <div class = "table_content row_padding">Set time to end the trip:  </div>
+                <div class = "table_content">
+{#                    <input type="date" class = "form-control" id = "endDate" name = "startDate" placeholder = "Date" value="{{form.end_date}}">#}
+                    {{ form.end_date }}
+                </div>
+
+                <div class = "table_content row_padding">Tell if you want anything specific:  </div>
+                <div class = "table_content">
+                    {{ form.optional }}
+                </div>
+
+                <div class = "table_content row_padding">
+                    <button type="submit" class = 'btn' style="background-color: #3f51b5; color: white">Create</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+
+    <footer class="footer bg-dark">
+        <div class="container">
+            <div class = "bottomnavbar">
+                <a href="{% url 'home_view' %}">Home</a>
+                <a href="{% url 'winter_view' %}">Winter Japan</a>
+                <a href="{% url 'spring_view' %}">Spring Japan</a>
+                <a href="{% url 'summer_view' %}">Summer Japan</a>
+                <a href="{% url 'autumn_view' %}">Autumn Japan</a>
+                <a href="{% url 'profile' %}">{{ request.user }}</a>
+                <a href="{% url 'order_view' %}" class = "active">Your Trip</a>
+            </div>
+
+            <div class="row justify-content-center newPadding2">
+                <div class="text-center social-media">
+                    <a class = "btn btn-social-icon btn-facebook" href="https://www.facebook.com/viktor.kachmaryk.3"><i class="fab fa-facebook"></i></a>
+                    <a class = "btn btn-social-icon btn-instagram" href="https://www.instagram.com/k__vitya__k/?hl=uk"><i class="fab fa-instagram"></i></a>
+                    <a class = "btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fab fa-twitter-square"></i></a>
+                    <a class = "btn btn-social-icon btn-gooogle" href="http://youtube.com/"><i class="fab fa-youtube"></i></a>
+                </div>
+           </div>
+            <div class="row justify-content-center newPadding3">
+                <div class="col-auto">
+                    <p>Copyright © Kachmaryk Viktor. All Rights Reserved.</p>
+                </div>
+           </div>
+        </div>
+    </footer>
+{% endblock %}

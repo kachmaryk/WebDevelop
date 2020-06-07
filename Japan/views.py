@@ -1,12 +1,13 @@
 from django.shortcuts import render
 from django.views.generic import View
-from .forms import ContactForm, CreateUserForm, EditProfileForm
-from .models import ContactInfo
+from .forms import ContactForm, CreateUserForm, EditProfileForm, TripForm
+from .models import ContactInfo, OrderInfo
 from django.http import JsonResponse
 from django.shortcuts import redirect
 from django.contrib import messages
 from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.decorators import login_required
+from django.forms.models import model_to_dict
 
 
 @login_required(login_url='signIn_view')
@@ -32,7 +33,6 @@ def summer_view(request):
 @login_required(login_url='signIn_view')
 def autumn_view(request):
     return render(request, 'autumnJapan.html', {})
-
 
 def sign_in_view(request):
     if request.user.is_authenticated:
@@ -81,7 +81,8 @@ def logout_view(request):
 
 @login_required(login_url='login')
 def profile_view(request):
-    args = {'user': request.user}
+    orders = OrderInfo.objects.filter(user_id=request.user.id)
+    args = {'user': request.user, 'orders': orders}
     return render(request, 'profile.html', args)
 
 
@@ -126,3 +127,17 @@ class ContactDelete(View):
         contact = ContactInfo.objects.get(id=ide)
         contact.delete()
         return JsonResponse({'result': 'ok'}, status=200)
+
+class Order(View):
+    def get(self, request):
+        form = TripForm()
+        return render(request, 'order.html', context = {'form': form})
+    def post(self, request):
+        form = TripForm(request.POST)
+        if form.is_valid():
+            new_order = form.save(commit=False)
+            new_order.user = request.user
+            new_order.save()
+            return redirect('profile')
+        else:
+            return redirect('order_view')

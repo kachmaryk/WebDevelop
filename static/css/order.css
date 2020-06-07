@@ -1,0 +1,112 @@
+body{
+  background: url(img/header3.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.myHernya{
+    background-color: rgba(255, 255, 255, 0.8);
+    padding-left: 31px;
+    padding-right: 31px;
+    padding-top: 15px;
+}
+
+.my_container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+    min-height: 700px;
+}
+
+.table{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 40px;
+}
+
+.table_content{
+    justify-content: center;
+    margin: 0px;
+    font-size: 18px;
+}
+
+.row_padding{
+    margin-top: 10px;
+}
+
+
+
+
+
+.footer {
+    margin: 0px auto;
+    padding: 30px 0px 20px 0px;
+    color: lightyellow;
+}
+
+.bottomnavbar {
+    overflow: hidden;
+    bottom: 0;
+    width: 100%;
+  }
+
+  /* Style the links inside the navigation bar */
+  .bottomnavbar a {
+    float: left;
+    display: block;
+    color: lightyellow;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    justify-self: center;
+  }
+
+  /* Change the color of links on hover */
+  .bottomnavbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  /* Add a color to the active/current link */
+  .bottomnavbar a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+@media screen and (max-width: 600px) {
+    .bottomnavbar a {
+        float: center;
+        display: block;
+        color: lightyellow;
+        text-align: center;
+        justify-self: center;
+        align-content: center;
+        align-self: center;
+        align-items: center;
+        text-decoration: none;
+        font-size: 17px;
+        width: 160px;
+        height: 35px;
+        justify-content: center;
+        padding: 0px 0px 0px 45px;
+      }
+}
+
+.newPadding2 {
+    padding: 20px 0px 0px 0px;
+}
+
+.newPadding3 {
+    padding: 50px 0px 0px 0px;
+    border-top: 1px ridge;
+}
+
+.footer .social-media a{
+    color: lightyellow;
+    font-size: 30px;
+    padding:  10px 0px 20px 0px;
+    margin: 0 10px;
+}

@@ -47,6 +47,9 @@
             <li class="nav-item">
                 <a class="nav-link" href="{% url 'profile' %}">{{ request.user }}</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'order_view' %}">Your Trip</a>
+            </li>
               {% endblock %}
           </ul>
             {% block logout %}
@@ -142,7 +145,8 @@
                 <a href="{% url 'spring_view' %}">Spring Japan</a>
                 <a href="{% url 'summer_view' %}">Summer Japan</a>
                 <a href="{% url 'autumn_view' %}">Autumn Japan</a>
-                <a href="{% url 'signIn_view' %}">Authorization</a>
+                <a href="{% url 'profile' %}">{{ request.user }}</a>
+                <a href="{% url 'order_view' %}">Your Trip</a>
             </div>
 
             <div class="row justify-content-center newPadding2">             

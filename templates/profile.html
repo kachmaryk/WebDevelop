@@ -11,5 +11,46 @@
             <p>Last name: {{ user.last_name }}</p>
             <a href="{% url 'profile_edit' %}"><button type="button" class = 'btn w3-btn' style="background-color: #3f51b5; color: white">Edit</button></a>
         </div>
+
+        <div>
+            <div class="profile_content">
+                {% for order in orders %}
+                    <h1>Order</h1>
+                    <p>Amount of guests: {{ order.guests }}</p>
+                    <p>Accomodation: {{ order.acomodation }}</p>
+                    <p>Start your trip:{{ order.start_date }}</p>
+                    <p>End yor trip:{{ order.end_date }}</p>
+                    <p>Additional:{{ order.optional }}</p>
+                    <br>
+                {% endfor %}
+            </div>
+        </div>
     </div>
+    <footer class="footer bg-dark">
+        <div class="container">
+            <div class = "bottomnavbar">
+                <a href="{% url 'home_view' %}">Home</a>
+                <a href="{% url 'winter_view' %}">Winter Japan</a>
+                <a href="{% url 'spring_view' %}>Spring Japan</a>
+                <a href="{% url 'summer_view' %}">Summer Japan</a>
+                <a href="{% url 'autumn_view' %}">Autumn Japan</a>
+                <a href="{% url 'profile' %}" class = "active">{{ request.user }}</a>
+                <a href="{% url 'order_view' %}">Your Trip</a>
+            </div>
+
+            <div class="row justify-content-center newPadding2">
+                <div class="text-center social-media">
+                    <a class = "btn btn-social-icon btn-facebook" href="https://www.facebook.com/viktor.kachmaryk.3"><i class="fab fa-facebook"></i></a>
+                    <a class = "btn btn-social-icon btn-instagram" href="https://www.instagram.com/k__vitya__k/?hl=uk"><i class="fab fa-instagram"></i></a>
+                    <a class = "btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fab fa-twitter-square"></i></a>
+                    <a class = "btn btn-social-icon btn-gooogle" href="http://youtube.com/"><i class="fab fa-youtube"></i></a>
+                </div>
+           </div>
+            <div class="row justify-content-center newPadding3">
+                <div class="col-auto">
+                    <p>Copyright © Kachmaryk Viktor. All Rights Reserved.</p>
+                </div>
+           </div>
+        </div>
+    </footer>
 {% endblock %}
